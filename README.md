@@ -2,6 +2,12 @@
 
 This Streamlit application processes PDFs containing handwritten text, extracts the text using OCR technology, and generates an AI-powered summary of the content using Google's Gemini model.
 
+### Demo
+
+
+https://github.com/user-attachments/assets/711acd97-ba16-4b99-8d51-bda1b844594e
+
+
 ## Features
 
 - **Text Extraction:** Converts handwritten text in PDFs to machine-readable text using Tesseract OCR.
