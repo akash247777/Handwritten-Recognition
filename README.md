@@ -78,3 +78,26 @@ streamlit run main.py
 - The extracted text and summary are displayed in separate tabs.
 
 - Use the download buttons to save the extracted text and summary as .txt files.
+
+
+### Notes
+
+- Ensure Tesseract and Poppler paths are correctly configured in main.py to avoid runtime errors.
+
+- The application handles large PDFs by splitting text into chunks for summarization, ensuring compatibility with the Gemini model's token limits.
+
+- The Google API key is required only for summarization; text extraction works without it.
+
+- The application uses temporary files for PDF processing, which are automatically deleted after use.
+
+### Troubleshooting
+
+- Tesseract Not Found: Verify the Tesseract executable path in main.py and ensure Tesseract is installed.
+
+- Poppler Not Found: Check the Poppler path in main.py and ensure Poppler is installed.
+
+- API Key Errors: Ensure the Google API key is valid and the Generative AI API is enabled in your Google Cloud project.
+
+- Memory Issues: For very large PDFs, consider increasing system memory or reducing the PDF size.
+
+
